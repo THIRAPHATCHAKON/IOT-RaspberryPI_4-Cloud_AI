@@ -1,0 +1,11 @@
+version: '3.8'
+
+services:
+  license-plate-api:
+    build: .
+    container_name: lpr_system
+    ports:
+      - "5000:5000"  # เชื่อมพอร์ตเครื่อง VPS (5000) เข้ากับ Container (5000)
+    volumes:
+      - ./system/images:/app/images  # ให้รูปที่บันทึกใน Container มาปรากฏที่เครื่อง VPS จริงด้วย
+    restart: always

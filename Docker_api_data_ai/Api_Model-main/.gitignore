@@ -1,0 +1,12 @@
+# Python environment
+venv/
+__pycache__/
+*.pyc
+
+# Local data (ไม่ควรเอาขึ้น Git เพราะจะทำให้ Repository หนัก)
+system/images/*
+!system/images/.gitkeep
+
+# OS generated files
+.DS_Store
+Thumbs.db
